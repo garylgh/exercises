@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Center1</title>
+    <style media="screen">
+        .container{
+            width: 970px!important;
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .bd {border: 1px solid #ccc;}
+        .parent1{text-align: center;}
+        .child1{display: inline-block;}
+
+        .parent2 {}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h5>1.使用inline-block 和 text-align实现</h5>
+            <p>
+                优点：兼容性好；
+                不足：需要同时设置子元素和父元素
+            </p>
+            <div class="parent1">
+                <div class="child1">
+                    使用inline-block 和 text-align实现
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h5>2.使用margin:0 auto来实现</h5>
+            <p>
+                优点：兼容性好
+                缺点: 需要指定宽度
+            </p>
+            <div class="parent2">
+                <div class="child2">
+                    使用margin:0 auto来实现
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
