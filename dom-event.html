@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+        div {
+            width: 100px;
+            height: 100px;
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var divs = document.getElementsByTagName('div');
+        for(var i = 0; i < divs.length; i++) {
+            divs[i].addEventListener('click', function(event) {
+                console.log(this.id);
+            }, true);
+        }
+
+    </script>
+</body>
+</html>
